@@ -12,6 +12,7 @@ from .utils import (
     get_instruments_details,
     get_dhan_trading_symbol,
     get_parsed_instruments_attrdict,
+    fetch_and_save_latest_dhan_master_scrip_feather,
 )
 
 __all__ = [
@@ -26,4 +27,5 @@ __all__ = [
     "get_instruments_details",
     "get_dhan_trading_symbol",
     "get_parsed_instruments_attrdict",
+    "fetch_and_save_latest_dhan_master_scrip_feather",
 ]
