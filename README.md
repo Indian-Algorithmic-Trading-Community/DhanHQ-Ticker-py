@@ -5,12 +5,12 @@ DhanHQ-Ticker-py is a set of Websocket API that expose many capabilities require
 
 
 ## Quickstart
-You can install the package via `pip install -U git+https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py.git` or `pip install dhanhq_ticker_py-0.1.0-py3-none-any.whl
+You can install the package via `pip install -U git+https://github.com/ShabbirHasan1/DhanHQ-Ticker-py.git` or `pip install dhanhq_ticker_py-0.1.0-py3-none-any.whl
 `
 
 ### WebSocket Usage
 
-*Example -1 =>*  [login_with_credentials_ticker.py](https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py/blob/main/examples/login_with_credentials_ticker.py)
+*Example -1 =>*  [login_with_credentials_ticker.py](https://github.com/ShabbirHasan1/DhanHQ-Ticker-py/blob/main/examples/login_with_credentials_ticker.py)
 
 ```python
 import signal
@@ -25,23 +25,6 @@ from dhanhq_ticker_py import (
 login_id = "Paste Your User User Id / Login Id Here"
 password = "Paste Your User Password Here"
 # Or You Can Read From A Plain Text File / Config / TOML / YAML Files.
-
-# Fetch Instrument Details For Which We Want To Subscribe For Market Data
-bnf_expiry, nf_expiry = [get_expiry_dates(idx, "NSE") for idx in {"BANKNIFTY", "NIFTY"}]
-nearest_bnf_expiry, nearest_nf_expiry = (
-    bnf_expiry["ExpiryDate"][0],
-    nf_expiry["ExpiryDate"][0],
-)
-
-instruments = get_instruments_details(
-    ["NIFTY", "BANKNIFTY"],
-    "NSE",
-    is_optidx=True,
-    expiry_dates=[nearest_bnf_expiry, nearest_nf_expiry],
-    strikes=[20000, 45000],
-    opt_types=["CE", "PE"],
-)
-finnifty_all_nearest_expiry_options = get_option_chain("FINNIFTY", "NSE")
 
 # Define The Callbacks / Method Hooks
 def on_ticks(tick):
@@ -68,6 +51,23 @@ ticker.login_with_credentials(login_id, password)
 # The User To Key In The Received OTP In The Terminal / Console And Press
 # Enter To Continue Completing A Successfull Login With Credentials.
 
+# Fetch Instrument Details For Which We Want To Subscribe For Market Data
+bnf_expiry, nf_expiry = [get_expiry_dates(idx, "NSE") for idx in {"BANKNIFTY", "NIFTY"}]
+nearest_bnf_expiry, nearest_nf_expiry = (
+    bnf_expiry["ExpiryDate"][0],
+    nf_expiry["ExpiryDate"][0],
+)
+
+instruments = get_instruments_details(
+    ["NIFTY", "BANKNIFTY"],
+    "NSE",
+    is_optidx=True,
+    expiry_dates=[nearest_bnf_expiry, nearest_nf_expiry],
+    strikes=[20000, 45000],
+    opt_types=["CE", "PE"],
+)
+finnifty_all_nearest_expiry_options = get_option_chain("FINNIFTY", "NSE")
+
 # Subscribe / Unsubscribe To The Instruments, It Can Be At Any Point
 # After Instantiation of `DhanTicker` Class Object With Either `userdata`
 # Or Login With Credentials.
@@ -102,7 +102,7 @@ if __name__ == "__main__":
             sleep(5)
 ```
 
-*Example - 2 =>*  [login_with_userdata_ticker.py](https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py/blob/main/examples/login_with_userdata_ticker.py)
+*Example - 2 =>*  [login_with_userdata_ticker.py](https://github.com/ShabbirHasan1/DhanHQ-Ticker-py/blob/main/examples/login_with_userdata_ticker.py)
 
 ```python
 import signal
@@ -116,23 +116,6 @@ from dhanhq_ticker_py import (
 
 userdata = "Paste Your User Data Here"
 # Or You Can Read From A Plain Text File / Config / TOML / YAML Files.
-
-# Fetch Instrument Details For Which We Want To Subscribe For Market Data
-bnf_expiry, nf_expiry = [get_expiry_dates(idx, "NSE") for idx in {"BANKNIFTY", "NIFTY"}]
-nearest_bnf_expiry, nearest_nf_expiry = (
-    bnf_expiry["ExpiryDate"][0],
-    nf_expiry["ExpiryDate"][0],
-)
-
-instruments = get_instruments_details(
-    ["NIFTY", "BANKNIFTY"],
-    "NSE",
-    is_optidx=True,
-    expiry_dates=[nearest_bnf_expiry, nearest_nf_expiry],
-    strikes=[20000, 45000],
-    opt_types=["CE", "PE"],
-)
-finnifty_all_nearest_expiry_options = get_option_chain("FINNIFTY", "NSE")
 
 # Define The Callbacks / Method Hooks
 def on_ticks(tick):
@@ -153,10 +136,22 @@ ticker = DhanTicker(
     # debug_verbose=False, # Uncomment This For Verbose Debugging
 )
 
-# As Dhan Doesnt Offer Provisions To Use TOTP, Instead It Send OTP On
-# The Registered Mobile Number And Email ID. The Program Will Wait For
-# The User To Key In The Received OTP In The Terminal / Console And Press
-# Enter To Continue Completing A Successfull Login With Credentials.
+# Fetch Instrument Details For Which We Want To Subscribe For Market Data
+bnf_expiry, nf_expiry = [get_expiry_dates(idx, "NSE") for idx in {"BANKNIFTY", "NIFTY"}]
+nearest_bnf_expiry, nearest_nf_expiry = (
+    bnf_expiry["ExpiryDate"][0],
+    nf_expiry["ExpiryDate"][0],
+)
+
+instruments = get_instruments_details(
+    ["NIFTY", "BANKNIFTY"],
+    "NSE",
+    is_optidx=True,
+    expiry_dates=[nearest_bnf_expiry, nearest_nf_expiry],
+    strikes=[20000, 45000],
+    opt_types=["CE", "PE"],
+)
+finnifty_all_nearest_expiry_options = get_option_chain("FINNIFTY", "NSE")
 
 # Subscribe / Unsubscribe To The Instruments, It Can Be At Any Point
 # After Instantiation of `DhanTicker` Class Object With Either `userdata`
@@ -192,7 +187,7 @@ if __name__ == "__main__":
             sleep(5)
 ```
 
-*Example - 2 =>*  [get_instrument_details.py](https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py/blob/main/examples/get_instrument_details.py)
+*Example - 2 =>*  [get_instrument_details.py](https://github.com/ShabbirHasan1/DhanHQ-Ticker-py/blob/main/examples/get_instrument_details.py)
 
 ```python
 from dhanhq_ticker_py import (
@@ -200,7 +195,10 @@ from dhanhq_ticker_py import (
     get_expiry_dates,
     get_instrument_details,
     get_instruments_details,
+    fetch_and_save_latest_dhan_master_scrip_feather,
 )
+
+fetch_and_save_latest_dhan_master_scrip_feather()
 
 get_instrument_details("RELIANCE", "BSE", is_equity=True, pretty_print=True)
 
