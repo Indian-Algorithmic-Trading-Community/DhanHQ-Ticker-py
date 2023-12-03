@@ -1,0 +1,29 @@
+[project]
+name = "dhanhq-ticker-py"
+version = "0.1.0"
+description = "The Unofficial Python Websocket Client For Communicating With The Dhan API."
+authors = [
+    { name = "Dr June Moone", email = "96371033+MooneDrJune@users.noreply.github.com" }
+]
+dependencies = [
+    "pycryptodome>=3.19.0",
+    "websockets>=12.0",
+    "aiohttp[speedups]>=3.9.1",
+    "polars>=0.19.19",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black>=23.11.0",
+    "ruff>=0.1.6",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
