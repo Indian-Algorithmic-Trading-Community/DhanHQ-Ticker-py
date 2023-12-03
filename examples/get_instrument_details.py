@@ -3,7 +3,10 @@ from dhanhq_ticker_py import (
     get_expiry_dates,
     get_instrument_details,
     get_instruments_details,
+    fetch_and_save_latest_dhan_master_scrip_feather,
 )
+
+fetch_and_save_latest_dhan_master_scrip_feather()
 
 get_instrument_details("RELIANCE", "BSE", is_equity=True, pretty_print=True)
 

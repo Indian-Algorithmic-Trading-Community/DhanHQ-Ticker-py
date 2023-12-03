@@ -7,32 +7,12 @@ from dhanhq_ticker_py import (
     get_instruments_details,
 )
 
-
 login_id = "Paste Your User User Id / Login Id Here"
 password = "Paste Your User Password Here"
 # Or You Can Read From A Plain Text File / Config / TOML / YAML Files.
 
-# Fetch Instrument Details For Which We Want To Subscribe For Market Data
-bnf_expiry, nf_expiry = [get_expiry_dates(idx, "NSE") for idx in {"BANKNIFTY", "NIFTY"}]
-nearest_bnf_expiry, nearest_nf_expiry = (
-    bnf_expiry["ExpiryDate"][0],
-    nf_expiry["ExpiryDate"][0],
-)
-
-instruments = get_instruments_details(
-    ["NIFTY", "BANKNIFTY"],
-    "NSE",
-    is_optidx=True,
-    expiry_dates=[nearest_bnf_expiry, nearest_nf_expiry],
-    strikes=[20000, 45000],
-    opt_types=["CE", "PE"],
-)
-finnifty_all_nearest_expiry_options = get_option_chain("FINNIFTY", "NSE")
-
 
 # Define The Callbacks / Method Hooks
-
-
 def on_ticks(tick):
     print(tick, end="\n" * 2)
 
@@ -59,6 +39,23 @@ ticker.login_with_credentials(login_id, password)
 # The Registered Mobile Number And Email ID. The Program Will Wait For
 # The User To Key In The Received OTP In The Terminal / Console And Press
 # Enter To Continue Completing A Successfull Login With Credentials.
+
+# Fetch Instrument Details For Which We Want To Subscribe For Market Data
+bnf_expiry, nf_expiry = [get_expiry_dates(idx, "NSE") for idx in {"BANKNIFTY", "NIFTY"}]
+nearest_bnf_expiry, nearest_nf_expiry = (
+    bnf_expiry["ExpiryDate"][0],
+    nf_expiry["ExpiryDate"][0],
+)
+
+instruments = get_instruments_details(
+    ["NIFTY", "BANKNIFTY"],
+    "NSE",
+    is_optidx=True,
+    expiry_dates=[nearest_bnf_expiry, nearest_nf_expiry],
+    strikes=[20000, 45000],
+    opt_types=["CE", "PE"],
+)
+finnifty_all_nearest_expiry_options = get_option_chain("FINNIFTY", "NSE")
 
 # Subscribe / Unsubscribe To The Instruments, It Can Be At Any Point
 # After Instantiation of `DhanTicker` Class Object With Either `userdata`
