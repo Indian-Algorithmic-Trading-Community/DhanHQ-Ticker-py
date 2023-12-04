@@ -5,12 +5,12 @@ DhanHQ-Ticker-py is a set of Websocket API that expose many capabilities require
 
 
 ## Quickstart
-You can install the package via `pip install -U git+https://github.com/ShabbirHasan1/DhanHQ-Ticker-py.git` or `pip install dhanhq_ticker_py-0.1.0-py3-none-any.whl
+You can install the package via `pip install -U git+https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py.git` or `pip install dhanhq_ticker_py-0.1.0-py3-none-any.whl
 `
 
 ### WebSocket Usage
 
-*Example -1 =>*  [login_with_credentials_ticker.py](https://github.com/ShabbirHasan1/DhanHQ-Ticker-py/blob/main/examples/login_with_credentials_ticker.py)
+*Example -1 =>*  [login_with_credentials_ticker.py](https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py/blob/main/examples/login_with_credentials_ticker.py)
 
 ```python
 import signal
@@ -102,7 +102,7 @@ if __name__ == "__main__":
             sleep(5)
 ```
 
-*Example - 2 =>*  [login_with_userdata_ticker.py](https://github.com/ShabbirHasan1/DhanHQ-Ticker-py/blob/main/examples/login_with_userdata_ticker.py)
+*Example - 2 =>*  [login_with_userdata_ticker.py](https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py/blob/main/examples/login_with_userdata_ticker.py)
 
 ```python
 import signal
@@ -187,7 +187,7 @@ if __name__ == "__main__":
             sleep(5)
 ```
 
-*Example - 2 =>*  [get_instrument_details.py](https://github.com/ShabbirHasan1/DhanHQ-Ticker-py/blob/main/examples/get_instrument_details.py)
+*Example - 2 =>*  [get_instrument_details.py](https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py/blob/main/examples/get_instrument_details.py)
 
 ```python
 from dhanhq_ticker_py import (
