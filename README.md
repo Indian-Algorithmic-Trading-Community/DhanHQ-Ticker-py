@@ -46,7 +46,7 @@ ticker = DhanTicker(
 
 ticker.login_with_credentials(login_id, password)
 
-# As Dhan Doesnt Offer Provisions To Use TOTP, Instead It Send OTP On
+# As Dhan Doesn't Offer Provisions To Use TOTP, Instead It Send OTP On
 # The Registered Mobile Number And Email ID. The Program Will Wait For
 # The User To Key In The Received OTP In The Terminal / Console And Press
 # Enter To Continue Completing A Successfull Login With Credentials.
@@ -78,7 +78,7 @@ if instruments is not None:
     ticker.subscribe(instruments, mode=ticker.FULL)
 ticker.subscribe(finnifty_all_nearest_expiry_options, mode=ticker.FULL)
 
-# The Ticker is fully asynchronous and runs in a backgroung thread event loop.
+# The Ticker is fully asynchronous and runs in a background thread event loop.
 # So We Need To Keep The Main Thread Alive.
 
 if __name__ == "__main__":
@@ -87,7 +87,7 @@ if __name__ == "__main__":
 
     while True:
         try:
-            # Do Any Operation In This Thread, And It Wont
+            # Do Any Operation In This Thread, And It Won't
             # Effect The Market Data Feed And Order Update Feed.
 
             # Or If You do not want to do any operation but only
@@ -163,7 +163,7 @@ if instruments is not None:
     ticker.subscribe(instruments, mode=ticker.FULL)
 ticker.subscribe(finnifty_all_nearest_expiry_options, mode=ticker.FULL)
 
-# The Ticker is fully asynchronous and runs in a backgroung thread event loop.
+# The Ticker is fully asynchronous and runs in a background thread event loop.
 # So We Need To Keep The Main Thread Alive.
 
 if __name__ == "__main__":
@@ -172,7 +172,7 @@ if __name__ == "__main__":
 
     while True:
         try:
-            # Do Any Operation In This Thread, And It Wont
+            # Do Any Operation In This Thread, And It Won't
             # Effect The Market Data Feed And Order Update Feed.
 
             # Or If You do not want to do any operation but only
