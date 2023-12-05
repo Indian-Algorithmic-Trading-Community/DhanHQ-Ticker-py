@@ -260,6 +260,9 @@ finnifty_all_nearest_expiry_options = get_option_chain("FINNIFTY", "NSE")
 print(finnifty_all_nearest_expiry_options, end="\n" * 2)
 ```
 
+### Code Statistics
+<img src=".assets/LinesOfCode.png" alt="LinesOfCode" width="1000" height="325" border="10" />
+
 #### License
 <sup>
 Licensed under either of <a href="LICENSE-APACHE">Apache License, Version
