@@ -34,9 +34,8 @@ def on_order_update(order_update):
     print(order_update, end="\n" * 2)
 
 # Assign The Callbacks / Method Hooks
-callbacks = DhanTicker.default_callbacks().update(
-    {"on_tick": on_ticks, "on_order_update": on_order_update}
-)
+callbacks = DhanTicker.default_callbacks()
+callbacks.update({"on_tick": on_ticks, "on_order_update": on_order_update})
 
 ticker = DhanTicker(
     callbacks=callbacks,
@@ -125,9 +124,8 @@ def on_order_update(order_update):
     print(order_update, end="\n" * 2)
 
 # Assign The Callbacks / Method Hooks
-callbacks = DhanTicker.default_callbacks().update(
-    {"on_tick": on_ticks, "on_order_update": on_order_update}
-)
+callbacks = DhanTicker.default_callbacks()
+callbacks.update({"on_tick": on_ticks, "on_order_update": on_order_update})
 
 ticker = DhanTicker(
     userdata=userdata,
