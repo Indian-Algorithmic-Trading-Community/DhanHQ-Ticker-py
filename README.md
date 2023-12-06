@@ -259,7 +259,7 @@ print(finnifty_all_nearest_expiry_options, end="\n" * 2)
 ```
 
 ### Code Statistics
-<img src=".assets/LinesOfCode.png" alt="LinesOfCode" width="1000" height="325" border="10" />
+<img src=".assets/LinesOfCode.png" alt="LinesOfCode" width="1000" height="300" border="10" />
 
 #### License
 <sup>
