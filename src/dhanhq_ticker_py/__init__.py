@@ -1,5 +1,4 @@
 from __future__ import unicode_literals, absolute_import
-
 from .ticker import DhanTicker
 from .utils import (
     Utils,
@@ -16,10 +15,10 @@ from .utils import (
 )
 
 __all__ = [
-    "DhanTicker",
     "Utils",
     "AttrDict",
     "Callback",
+    "DhanTicker",
     "get_expiry_dates",
     "get_option_chain",
     "get_instrument_type",
