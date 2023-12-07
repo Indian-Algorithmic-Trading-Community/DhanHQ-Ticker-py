@@ -10,7 +10,9 @@ You can install the package via `pip install -U git+https://github.com/Indian-Al
 **Note:** _As Mentioned in this [tweet](https://x.com/xoreax_eaxeax/status/1731551257301839966) the two key files `src/dhanhq_ticker_py/ticker.py` and `src/dhanhq_ticker_py/utils.py` and the wheel file has not been uploaded here on purpose. Refer the [screenshots](#screenshots) for more info._
 
 ## Demo Video Showcasing The Data Streaming To Excel
-[![Watch the Demo Video Showcasing The Data Streaming To Excel](.assets/DemoVideo.png)](.assets/DemoVideo.mp4)
+https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py/assets/96371033/f4be6f6d-21f2-4770-bf35-118aa6157c65
+
+
 
 ## WebSocket Usage
 
