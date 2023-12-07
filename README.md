@@ -268,8 +268,8 @@ print(finnifty_all_nearest_expiry_options, end="\n" * 2)
 <img src=".assets/LinesOfCode.png" alt="LinesOfCode" width="1000" height="250" border="10" />
 
 ## ScreenShots
-<img src=".assets/ReleaseWheelFileInfo.png" alt="Released Wheel File Information" border="10" />
-<img src=".assets/MIssingFileInfo.png" alt="Missing Files Information" border="10" />
+<img src=".assets/ReleaseWheelFileInfoDark.png" alt="Released Wheel File Information" border="10" />
+<img src=".assets/MIssingFileInfoDark.png" alt="Missing Files Information" border="10" />
 
 ## License
 <sup>
