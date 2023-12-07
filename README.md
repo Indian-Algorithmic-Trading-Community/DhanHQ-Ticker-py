@@ -5,8 +5,9 @@ DhanHQ-Ticker-py is a set of Websocket API that expose many capabilities require
 
 
 ## Quickstart
-You can install the package via `pip install -U git+https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py.git` or `pip install dhanhq_ticker_py-0.1.0-py3-none-any.whl
-`
+You can install the package via `pip install -U git+https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py.git` or `pip install dhanhq_ticker_py-0.1.0-py3-none-any.whl`
+
+**Note:** _As Mentioned in this [tweet](https://x.com/xoreax_eaxeax/status/1731551257301839966) the two key files `src/dhanhq_ticker_py/ticker.py` and `src/dhanhq_ticker_py/utils.py` and the wheel file has not been uploaded here on purpose. Refer the screenshots for more info._
 
 ### WebSocket Usage
 
