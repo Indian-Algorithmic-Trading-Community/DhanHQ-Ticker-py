@@ -9,7 +9,10 @@ You can install the package via `pip install -U git+https://github.com/Indian-Al
 
 **Note:** _As Mentioned in this [tweet](https://x.com/xoreax_eaxeax/status/1731551257301839966) the two key files `src/dhanhq_ticker_py/ticker.py` and `src/dhanhq_ticker_py/utils.py` and the wheel file has not been uploaded here on purpose. Refer the [screenshots](#screenshots) for more info._
 
-### WebSocket Usage
+## Demo Video Showcasing The Data Streaming To Excel
+[![Watch the Demo Video Showcasing The Data Streaming To Excel](.assets/DemoVideo.png)](.assets/DemoVideo.mp4)
+
+## WebSocket Usage
 
 *Example -1 =>*  [login_with_credentials_ticker.py](https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py/blob/main/examples/login_with_credentials_ticker.py)
 
@@ -259,14 +262,14 @@ finnifty_all_nearest_expiry_options = get_option_chain("FINNIFTY", "NSE")
 print(finnifty_all_nearest_expiry_options, end="\n" * 2)
 ```
 
-### Code Statistics
+## Code Statistics
 <img src=".assets/LinesOfCode.png" alt="LinesOfCode" width="1000" height="250" border="10" />
 
-### ScreenShots
+## ScreenShots
 <img src=".assets/ReleaseWheelFileInfo.png" alt="Released Wheel File Information" border="10" />
 <img src=".assets/MIssingFileInfo.png" alt="Missing Files Information" border="10" />
 
-#### License
+## License
 <sup>
 Licensed under either of <a href="LICENSE-APACHE">Apache License, Version
 2.0</a> or <a href="LICENSE-MIT">MIT license</a> at your option.
