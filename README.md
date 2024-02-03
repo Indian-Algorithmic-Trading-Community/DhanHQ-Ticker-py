@@ -7,8 +7,6 @@ DhanHQ-Ticker-py is a set of Websocket API that expose many capabilities require
 ## Quickstart
 You can install the package via `pip install -U git+https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py.git` or `pip install dhanhq_ticker_py-0.1.0-py3-none-any.whl`
 
-**Note:** _As Mentioned in this [tweet](https://x.com/xoreax_eaxeax/status/1731551257301839966) the two key files `src/dhanhq_ticker_py/ticker.py` and `src/dhanhq_ticker_py/utils.py` and the wheel file has not been uploaded here on purpose. Refer the [screenshots](#screenshots) for more info._
-
 ## Demo Video Showcasing The Data Streaming To Excel
 https://github.com/Indian-Algorithmic-Trading-Community/DhanHQ-Ticker-py/assets/96371033/f4be6f6d-21f2-4770-bf35-118aa6157c65
 
@@ -266,19 +264,6 @@ print(finnifty_all_nearest_expiry_options, end="\n" * 2)
 
 ## Code Statistics
 <img src=".assets/LinesOfCode.png" alt="LinesOfCode" width="1000" height="250" border="10" />
-
-## ScreenShots
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".assets/ReleaseWheelFileInfoDark.png">
-  <source media="(prefers-color-scheme: light)" srcset=".assets/ReleaseWheelFileInfo.png">
-  <img alt="Released Wheel File Information" src=".assets/ReleaseWheelFileInfo.png">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".assets/MIssingFileInfoDark.png">
-  <source media="(prefers-color-scheme: light)" srcset=".assets/MIssingFileInfo.png">
-  <img alt="Missing Files Information" src=".assets/MIssingFileInfo.png">
-</picture>
 
 ## License
 <sup>
