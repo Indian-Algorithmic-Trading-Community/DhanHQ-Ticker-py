@@ -71,7 +71,7 @@ else:
 
 __all__ = ["DhanTicker"]
 
-log = logging.getLogger(__name__)
+log = logging.getLogger("dhanticker")
 
 
 class DhanTicker:
