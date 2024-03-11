@@ -989,7 +989,7 @@ class Utils:
             )
         ):
             log.info("Proceeding With A Fresh Download of Master Scrip Data File")
-            pl.read_csv(MASTER_SCRIP_CSV_URL).select(
+            pl.read_csv(MASTER_SCRIP_CSV_URL, truncate_ragged_lines=True).select(
                 "*",
                 pl.concat_str(
                     [
